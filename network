@@ -1,0 +1,4 @@
+dmesg | egrep "brcm"
+
+cat /sys/firmware/efi/efivars/nvram-74b00bd9-805a-4d61-b51f-43268123d113 > /lib/firmware/brcm/brcmfmac43241b5-sdio.txt
+modprobe -r brcmfmac ; modprobe brcmfmac
